@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 .container {
@@ -20,9 +21,72 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(101, 52, 146);
+  background-color: rgb(195, 190, 198);
 }
 
 .testimonials {
   display: flex;
+}
+
+.user {
+  width: 800px;
+  text-align: center;
+  margin: 20px;
+  padding: 40px 40px;
+  box-sizing: border-box;
+  background-color: rgb(138, 107, 107);
+  border-radius: 150px;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.user img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid rgb(199, 155, 155);
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.user blockquote {
+  font-size: 1.4rem;
+  color: white;
+  line-height: 30px;
+  margin: 5px;
+}
+
+blockquote::before {
+  content: open-quote;
+  font-size: 3rem;
+  color: white;
+}
+blockquote::after {
+  content: close-quote;
+  font-size: 3rem;
+  color: white;
+}
+
+.user h3 {
+  font-size: 2rem;
+  color: rgb(72, 51, 51);
+}
+
+.pagination-bullets {
+  display: flex;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+.pagination-bullets span {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(60, 39, 12);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
 }
